@@ -8,7 +8,7 @@ from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 # OpenRouter Configuration
 def get_llm():
     return ChatOpenAI(
-        model="meta-llama/llama-3-8b-instruct:free",
+        model="meta-llama/llama-3.3-70b-instruct:free",
         openai_api_key=os.environ.get("OPENROUTER_API_KEY", ""),
         openai_api_base="https://openrouter.ai/api/v1",
         max_tokens=500
